@@ -31,19 +31,19 @@ public class MainActivity extends AppCompatActivity {
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     // 반월터널 37.333534, 126.880503
-
+    // 안산 터널 37.316953, 126.830440
     String aa = "bbb";
 
     private static final String TAG = "Main";
 
 //    private static final double LAT = 37.333534; // 반월터널 정보
-    private static final double LAT = 37.476727; // 반월터널 정보
+    private static final double LAT = 37.316953; // 반월터널 정보
 //    private static final double LON = 126.880503; // 반월터널 정보
-    private static final double LON = 126.963987; // 반월터널 정보
+    private static final double LON = 126.830440; // 반월터널 정보
     private static final double MEASURE_DIST = 700; // 차와 터널 사이에 측정 기준 거리
 
-    private double NOW_LAT;
-    private double NOW_LON;
+//    private double NOW_LAT;
+//    private double NOW_LON;
 
     public static String mApiKey = "d8a122f8-d03f-37ca-968a-aba76934c836";
 
@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             str = str + " 아직 터널 아님";
         }
+        str+= " (남은거리 "+Math.abs(returnValue-MEASURE_DIST)+" )";
         return str;
     };
 
