@@ -204,7 +204,8 @@ public class MainActivity extends AppCompatActivity {
             }
             initView(nowLat, nowLon);
 
-            calcDist(nowLat, nowLon);
+            String str = calcDist(nowLat, nowLon);
+            Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
         }
 
         @Override
