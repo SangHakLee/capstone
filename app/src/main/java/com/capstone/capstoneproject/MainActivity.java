@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private static final double LAT = 37.476727; // 반월터널 정보
 //    private static final double LON = 126.880503; // 반월터널 정보
     private static final double LON = 126.963987; // 반월터널 정보
-    private static final double MEASURE_DIST = 200; // 차와 터널 사이에 측정 기준 거리
+    private static final double MEASURE_DIST = 700; // 차와 터널 사이에 측정 기준 거리
 
     private double NOW_LAT;
     private double NOW_LON;
@@ -294,6 +294,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -326,14 +328,8 @@ public class MainActivity extends AppCompatActivity {
 
         // http://hyoin1223.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D
         // 블루투스 연결하기
-        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if(mBluetoothAdapter == null) {
-            //장치가 블루투스를 지원하지 않는 경우.
-        }
 
-        else {
-            // 장치가 블루투스를 지원하는 경우.
-        }
+
     }
 
     @Override
